@@ -1,0 +1,107 @@
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6; /* A very soft, warm off-white */
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .header-bg {
+            background-image: url('assets/background.webp'); /* Dark green overlay for header image */
+            background-size: cover;
+            background-position: 0 40%;
+            position: relative;
+        }
+        .header-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.45); /* Slightly darker overlay for better text contrast */
+            z-index: 1;
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
+            padding: 8rem 0; /* More vertical padding for hero section */
+        }
+        .nav-item:hover {
+            color: #d97706; /* Tailwind orange-600 for hover */
+            transform: translateY(-2px);
+        }
+        .btn-primary {
+            background-color: #d97706; /* Tailwind orange-600 */
+            color: white;
+            padding: 1rem 2.5rem; /* Larger buttons */
+            border-radius: 9999px; /* Fully rounded/pill shape */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .btn-primary:hover {
+            background-color: #f97316; /* Tailwind orange-500 */
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .section-title {
+            color: #6d4218; /* A rich brown for titles */
+            border-bottom: 3px solid #d97706; /* Orange underline */
+            padding-bottom: 0.75rem;
+            margin-bottom: 3rem;
+            display: inline-block; /* To make border-bottom fit content */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* More prominent rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden; /* Ensure image corners match card */
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1rem; /* Rounded corners for images */
+            object-fit: cover; /* Ensures images cover their area well */
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px dashed #e5e7eb; /* Light dashed line for separation */
+            margin-bottom: 1rem;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .menu-item-name {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.125rem; /* text-lg */
+        }
+        .menu-item-description {
+            font-size: 0.875rem; /* text-sm */
+            color: #6b7280; /* Tailwind gray-500 */
+        }
+        .menu-item-price {
+            font-weight: 700;
+            color: #d97706; /* Tailwind orange-600 */
+            font-size: 1.125rem; /* text-lg */
+            margin-left: 1rem; /* Space between name and price */
+            flex-shrink: 0; /* Prevent price from shrinking */
+        }
+        .footer-bg {
+            background-color: #1f2937; /* Tailwind gray-800 */
+            color: #e5e7eb; /* Tailwind gray-200 */
+        }
+  

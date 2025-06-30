@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiên Ân - Authentic Vietnamese, Chinese, Thai Cuisine</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for general text, and a more decorative one for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="header-bg text-center text-white shadow-xl">
+        <div class="container mx-auto px-4 header-content flex flex-col items-center justify-center min-h-[400px]">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 drop-shadow-lg leading-tight">THIÊN ÂN</h1>
+            <p class="text-2xl md:text-3xl mb-8 drop-shadow-md">A Taste of Authentic Vietnamese, Chinese, & Thai Cuisine</p>
+            <a href="#menu" class="btn-primary">Explore Our Menu</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg py-4 sticky top-0 z-50 rounded-b-xl">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-center space-y-3 md:space-y-0 md:space-x-10">
+            <a href="#menu" class="text-lg font-semibold text-gray-700 hover:text-orange-700 transition duration-300 nav-item">Menu</a>
+            <a href="#about" class="text-lg font-semibold text-gray-700 hover:text-orange-700 transition duration-300 nav-item">About Us</a>
+            <a href="#gallery" class="text-lg font-semibold text-gray-700 hover:text-orange-700 transition duration-300 nav-item">Gallery</a>
+            <a href="#location" class="text-lg font-semibold text-gray-700 hover:text-orange-700 transition duration-300 nav-item">Location & Hours</a>
+            <a href="#contact" class="text-lg font-semibold text-gray-700 hover:text-orange-700 transition duration-300 nav-item">Contact</a>
+            
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-fdfaf6">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold section-title mb-12">Our Story</h2>
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-12">
+                <div class="lg:w-1/4">
+                    <img src="assets/phobowl.webp" alt="Chef preparing food" class="img-fluid card p-0">
+                </div>
+                <div class="lg:w-1/2 text-left">
+                    <p class="text-xl leading-relaxed text-gray-700 mb-6">
+                        At Thiên Ân, we believe in sharing the rich culinary heritage of Southeast Asia. Our journey began with a passion for traditional recipes passed down through generations, combined with a desire to offer a truly memorable dining experience.
+                    </p>
+                    <p class="text-xl leading-relaxed text-gray-700">
+                        Every dish is crafted with the freshest local ingredients and an unwavering commitment to authenticity. From the savory depths of our Phở to the aromatic spices of our Thai curries and the comforting flavors of our Chinese classics, we invite you to embark on a delightful culinary adventure with us.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center section-title mb-12">Our Extensive Menu</h2>
+
+            <!-- Featured Dishes Section (New) -->
+            <div class="mb-16">
+                <h3 class="text-4xl font-semibold mb-8 text-center text-gray-800">Chef's Recommendations</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card p-6 flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/FFD700/333333?text=Signature+Pho" alt="Signature Pho" class="img-fluid mb-4">
+                        <h4 class="text-2xl font-bold text-gray-800 mb-2">House Special Phở</h4>
+                        <p class="text-md text-gray-600 mb-4">Slow-cooked beef broth with steak, brisket, meatballs, and fresh herbs.</p>
+                        <p class="text-2xl font-bold text-orange-600">$13.99</p>
+                    </div>
+                    <div class="card p-6 flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/FFA07A/FFFFFF?text=Crispy+Spring+Rolls" alt="Crispy Spring Rolls" class="img-fluid mb-4">
+                        <h4 class="text-2xl font-bold text-gray-800 mb-2">Crispy Spring Rolls</h4>
+                        <p class="text-md text-gray-600 mb-4">Golden fried rolls filled with pork, shrimp, and vegetables, served with fish sauce.</p>
+                        <p class="text-2xl font-bold text-orange-600">$8.99</p>
+                    </div>
+                    <div class="card p-6 flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/9ACD32/FFFFFF?text=Pad+Thai+Delight" alt="Pad Thai" class="img-fluid mb-4">
+                        <h4 class="text-2xl font-bold text-gray-800 mb-2">Chicken Pad Thai</h4>
+                        <p class="text-md text-gray-600 mb-4">Classic stir-fried noodles with chicken, peanuts, bean sprouts, and lime.</p>
+                        <p class="text-2xl font-bold text-orange-600">$12.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Menu Categories -->
+
+            <!-- Beverage Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Beverages</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Canned Soda</p>
+                            <p class="menu-item-description">Coke, Diet Coke, Sprite, Dr. Pepper, Root Beer, Fanta, etc.</p>
+                        </div>
+                        <p class="menu-item-price">$1.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Topochico</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$2.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Bottle Water</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$1.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Iced Tea</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$2.19</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Hot Tea</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$2.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Fresh Lemonade</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$4.29</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Strawberry Lemonade</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$4.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Vietnamese Coffee</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$5.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Iced Thai Tea</p>
+                            <p class="menu-item-description">Green or Orange</p>
+                        </div>
+                        <p class="menu-item-price">$5.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Smoothies</p>
+                            <p class="menu-item-description">Avocado, Strawberries, Strawberries & Banana, Mango, Taro, Honey Dew, Thai Tea, Milk Tea, Matcha</p>
+                        </div>
+                        <p class="menu-item-price">$5.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Side (Boba/Flavor)</p>
+                            <p class="menu-item-description">Black Boba ($0.59), Popping ($0.59), Mix Flavor ($0.59)</p>
+                        </div>
+                        <p class="menu-item-price">Prices vary</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appetizer Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Appetizers</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Summer Rolls</p>
+                            <p class="menu-item-description">Boiled shrimp w/ pork roll in rice paper w/ noodle, cilantro, lettuce. Boiled carrot, daikon & bean sprout to be served with peanut sauce.</p>
+                        </div>
+                        <p class="menu-item-price">$7.49</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">VN Spring Rolls</p>
+                            <p class="menu-item-description">Deep fried rolls of ground pork, carrot, clear noodles, mushroom, and onion served with fresh lettuce, cilantro to be served with fish sauce.</p>
+                        </div>
+                        <p class="menu-item-price">$8.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Fried Dumplings</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$6.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Cheese Rangoon</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$6.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Chicken Lettuce Wrap</p>
+                            <p class="menu-item-description">Served with fresh lettuce, cilantro, bell pepper, lime, pickled carrot, and crushed peanuts.</p>
+                        </div>
+                        <p class="menu-item-price">$10.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Pork Eggrolls</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$4.49</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Veggies Eggrolls</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$3.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Papaya Salad</p>
+                            <p class="menu-item-description">Choice of Shrimp, or Beef, or Tofu Lemongrass</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">VN Spring Roll</p>
+                            <p class="menu-item-description">Fresh eggroll & cheese rangoon</p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Wonton Soup</p>
+                            <p class="menu-item-description">CUP: $5.99 / BOWL: $10.99</p>
+                        </div>
+                        <p class="menu-item-price">Various</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Egg Drop Soup</p>
+                            <p class="menu-item-description">CUP: $3.49 / BOWL: $10.99</p>
+                        </div>
+                        <p class="menu-item-price">Various</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Edamame</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$4.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Shrimp Tempura</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$8.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Fried Calamari</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$8.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pho Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Phở (Noodle Soup)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">House Bowl</p>
+                            <p class="menu-item-description">Steak, Brisket, Meatball & Tendon</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Eye Round Steak</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Brisket</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Steak & Brisket</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Meatballs</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Steak & Meatballs</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Shrimp</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Shrimp & Veggies</p>
+                            <p class="menu-item-description">Broccoli, carrot, cabbage & zucchini</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Seafood</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$15.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Chicken</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Chicken & Veggies</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Steak, Chicken & Cabbage</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Veggies</p>
+                            <p class="menu-item-description">Broccoli, carrot, cabbage & zucchini</p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Tofu & Veggies</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Combo</p>
+                            <p class="menu-item-description">Steak, Chicken & Shrimp</p>
+                        </div>
+                        <p class="menu-item-price">$14.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Tendon</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vietnamese Special Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Vietnamese Special</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Hủ Tiếu</p>
+                            <p class="menu-item-description">Combination rice noodles soup w/ shrimp, wonton, pork & quail egg</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Bánh Canh</p>
+                            <p class="menu-item-description">Combination flat rice noodles soup w/ shrimp, wonton, pork & quail egg</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Bún Bò Huế</p>
+                            <p class="menu-item-description">Spicy lemongrass beef noodles soup w/ steak, brisket, meatball & ham</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Mì Thập Cẩm</p>
+                            <p class="menu-item-description">Combination egg noodles soup w/ shrimp, wonton, pork & quail egg</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Vegan Phở</p>
+                            <p class="menu-item-description">Vegan broth with fried tofu, broccoli, carrot, zucchini & cabbages</p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Grilled Short Rib</p>
+                            <p class="menu-item-description">Served w/ fried egg, white rice, house salad, soup & fish sauce</p>
+                        </div>
+                        <p class="menu-item-price">$15.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Grilled Pork Chop</p>
+                            <p class="menu-item-description">Served w/ fried egg, white rice, house salad, soup & fish sauce</p>
+                        </div>
+                        <p class="menu-item-price">$14.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Bánh Mì</p>
+                            <p class="menu-item-description">Served w/ cucumber, cilantro, pickle carrot, daikon & jalapeno. Choice of eggroll or rangoon or dumpling. Grilled Pork or Chicken, Lemongrass Chicken or Beef, or Tofu</p>
+                        </div>
+                        <p class="menu-item-price">$9.49</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chef Dishes Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Chef Dishes</h3>
+                <p class="text-lg text-gray-700 mb-4">Add-ons: Tofu, Veggies, Chicken, Beef +$1, Shrimp +$2, Combo +$3, Seafood +$3</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Fried Rice</p>
+                            <p class="menu-item-description">Cooked w/ egg, peas, carrot, corn & choice of meat</p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Singapore Noodles</p>
+                            <p class="menu-item-description">Stir fried clear noodles w/ egg, bell pepper, cabbage, broccoli, bean sprout & your choice of protein</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Lo Mein Noodles</p>
+                            <p class="menu-item-description">Cooked w/ carrot, cabbage, onion, bean sprout & choice of meat</p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Egg Noodles</p>
+                            <p class="menu-item-description">Cooked w/ egg noodles, egg, bok choy, cabbage, onions, bean sprout & choice of protein</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Pan-Fried Noodles</p>
+                            <p class="menu-item-description">Cooked w/ thick, flat rice noodles, egg, bok choy, cabbage, onions, bean sprout & choice of protein</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thai Dishes Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Thai Dishes</h3>
+                <p class="text-lg text-gray-700 mb-4">Add-ons: Tofu, Veggies, Chicken, Beef +$1, Shrimp +$2, Combo +$3, Seafood +$3</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Pad Thai</p>
+                            <p class="menu-item-description">Cook w/ egg, onions, crushed peanuts, limes & bean sprout</p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Curry Thai</p>
+                            <p class="menu-item-description">Cook w/ broccoli, carrot, onions, bell peppers, cabbage, lemongrass, zucchini, bamboo shoot & choice of protein</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vermicelli Bowl Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Vermicelli Bowl</h3>
+                <p class="text-lg text-gray-700 mb-4">Rice noodles served with crushed peanut, dried shallot, pickled carrot, daikon, lettuce, bean sprout, cucumber, cilantro & fish sauce.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Grilled Pork</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Grilled Pork & Spring Roll</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$13.49</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Spring Rolls</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Grilled Chicken</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Grilled Chicken & Spring Roll</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$13.49</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Shrimp Lemongrass</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$13.49</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Shrimp Lemongrass & Spring Roll</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$15.49</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Chicken Lemongrass</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Chicken Lemongrass & Spring Roll</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$13.49</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Beef Lemongrass</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Beef Lemongrass & Spring Roll</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$14.49</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Combo Lemongrass</p>
+                            <p class="menu-item-description">Beef, Chicken, Shrimp</p>
+                        </div>
+                        <p class="menu-item-price">$15.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Tofu Lemongrass</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$11.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Seafood Lemongrass</p>
+                            <p class="menu-item-description">Shrimp, Scallop, Mussel</p>
+                        </div>
+                        <p class="menu-item-price">$16.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chinese Dishes Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Chinese Dishes</h3>
+                <p class="text-lg text-gray-700 mb-4">Served w/ steam rice or fried rice. Choice of egg roll or rangoon or dumpling.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Poultry</p>
+                            <p class="menu-item-description">Orange Chicken, Sesame Chicken, Sweet & Sour Chicken, Chicken with Broccoli, Kung Pao Chicken</p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Beef Broccoli</p>
+                            <p class="menu-item-description">Kung Pao Beef, Mongolian Beef, Heman Corn Steak</p>
+                        </div>
+                        <p class="menu-item-price">$13.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Shrimp</p>
+                            <p class="menu-item-description">Shrimp Broccoli, Kung Pao Shrimp</p>
+                        </div>
+                        <p class="menu-item-price">$14.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Vegetable & Tofu</p>
+                            <p class="menu-item-description">Tofu, broccoli, carrot, cabbage, zucchini, onion in brown sauce</p>
+                        </div>
+                        <p class="menu-item-price">$12.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Triple Delight</p>
+                            <p class="menu-item-description">Stir-fried Shrimp, Beef & Chicken with bell peppers, onions, carrot, zucchini & cabbage in brown sauce</p>
+                        </div>
+                        <p class="menu-item-price">$14.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Seafood Delight</p>
+                            <p class="menu-item-description">Stir-fried Shrimp, Scallop & Mussel with broccoli, carrot, cabbage, zucchini, onion & bok choy in brown sauce</p>
+                        </div>
+                        <p class="menu-item-price">$15.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Children Menu Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Children Menu <span class="text-xl font-normal">(Only Under 12)</span></h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Orange Chicken</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$7.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Sesame Chicken</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$7.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Fried Rice or Lomien</p>
+                            <p class="menu-item-description">Chicken, Beef +$1, Shrimp +$2</p>
+                        </div>
+                        <p class="menu-item-price">$7.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Phở Kid</p>
+                            <p class="menu-item-description">Choice of Meatball, Steak, Brisket, Chicken, Plain (Side of bean sprout, cilantro, basil is not included)</p>
+                        </div>
+                        <p class="menu-item-price">$7.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side & Important Notes Section -->
+            <div class="mb-12 card p-8">
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Sides & Notes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4">
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Steam Rice</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$1.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Fried Rice</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$2.49</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Beef, Chicken, Pork, Tofu, Meatball</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$4.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Veggie, Salad, Rice Noodles</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$2.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Shrimp, Scallop, Mussel</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$5.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Curry Sauce</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$1.99</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex-grow">
+                            <p class="menu-item-name">Chinese Sauce</p>
+                            <p class="menu-item-description"></p>
+                        </div>
+                        <p class="menu-item-price">$0.99</p>
+                    </div>
+                </div>
+                <div class="mt-12 p-8 bg-yellow-50 border border-yellow-200 rounded-lg shadow-md text-center">
+                    <p class="text-xl font-semibold text-yellow-800 mb-4">Important Information:</p>
+                    <p class="text-lg text-yellow-700 mb-2">🌶️ Spicy Level: Please inform our staff about your preferred spice level.</p>
+                    <p class="text-lg text-yellow-700 mb-2">⚠️ If you have a food allergy or a special dietary requirement, please inform our member of staff.</p>
+                    <p class="text-lg text-yellow-700">An automatic 18% gratuity charge will be added to large group of 6 or more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-fdfaf6">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl font-bold text-center section-title mb-12">Our Culinary Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <img src="https://placehold.co/400x300/F08080/FFFFFF?text=Fresh+Rolls" alt="Vietnamese Fresh Rolls" class="img-fluid card p-0 h-full w-full">
+                <img src="https://placehold.co/400x300/FFA07A/FFFFFF?text=Banh+Mi" alt="Vietnamese Banh Mi" class="img-fluid card p-0 h-full w-full">
+                <img src="https://placehold.co/400x300/FFE4B5/333333?text=Noodle+Soup" alt="Vietnamese Noodle Soup" class="img-fluid card p-0 h-full w-full">
+                <img src="https://placehold.co/400x300/98FB98/333333?text=Curry+Dish" alt="Thai Curry Dish" class="img-fluid card p-0 h-full w-full">
+                <img src="https://placehold.co/400x300/ADD8E6/333333?text=Fried+Rice" alt="Chinese Fried Rice" class="img-fluid card p-0 h-full w-full">
+                <img src="https://placehold.co/400x300/FFD700/333333?text=Stir+Fry" alt="Stir Fry Dish" class="img-fluid card p-0 h-full w-full">
+                <img src="https://placehold.co/400x300/C0C0C0/333333?text=Dumplings" alt="Dumplings" class="img-fluid card p-0 h-full w-full">
+                <img src="https://placehold.co/400x300/D8BFD8/333333?text=Spring+Rolls" alt="Spring Rolls" class="img-fluid card p-0 h-full w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours Section -->
+    <section id="location" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold section-title mb-12">Find Us & Our Hours</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-12 items-start">
+                <div class="md:w-1/2 lg:w-1/3 card p-8">
+                    <h3 class="text-3xl font-semibold mb-4 text-gray-800">Visit Us</h3>
+                    <p class="text-lg text-gray-700 mb-2">126 W Rector Suite 108,</p>
+                    <p class="text-lg text-gray-700 mb-4">San Antonio, TX 78216</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Pho+Thien+An+126+West+Rector+Rd+Suite+108,+San+Antonio,+TX+78200" target="_blank" class="btn-primary mt-4 inline-block text-base">Get Directions</a>
+                </div>
+                <div class="md:w-1/2 lg:w-1/3 card p-8">
+                    <h3 class="text-3xl font-semibold mb-4 text-gray-800">Opening Hours</h3>
+                    <p class="text-xl font-semibold text-gray-800 mb-2">Everyday:</p>
+                    <p class="text-2xl font-bold text-orange-600">11 AM - 8 PM</p>
+                </div>
+            </div>
+            <!-- Placeholder for an embedded map if desired later -->
+            <div class="mt-12 card p-0 overflow-hidden" style="height: 400px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.9926659048742!2d-98.49770392356939!3d29.51657297519364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c5ffd576a53b3%3A0x845ff232eaecf5b7!2zUGjhu58gVGhpw6puIMOCbg!5e0!3m2!1sen!2sus!4v1751152709170!5m2!1sen!2sus"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-fdfaf6">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold section-title mb-12">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+                <p class="text-xl text-gray-700 mb-6">Have questions or want to make a reservation?</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Phone</h3>
+                        <p class="text-xl font-bold text-orange-600"><a href="tel:2108881089" class="hover:underline">210 - 888 - 1089</a></p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Email</h3>
+                        <p class="text-xl font-bold text-orange-600"><a href="mailto:info@phothienan.com" class="hover:underline">info@phothienan.com</a></p>
+                    </div>
+                </div>
+                <button onclick="window.location.href='tel:2108881089'" class="btn-primary mt-10">Call Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-bg py-10 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-lg mb-4">&copy; 2024 Thiên Ân. All rights reserved.</p>
+           <div class="flex justify-center space-x-6">
+                <!-- Placeholder for social media icons -->
+             <!--   <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.247 1.258c-3.13 0-3.51.012-4.743.069-1.233.057-2.102.261-2.853.535-.74.274-1.373.666-1.996 1.288-.622.622-1.014 1.256-1.288 1.996-.274.75-.478 1.62-.535 2.853-.057 1.233-.069 1.613-.069 4.743s.012 3.51.069 4.743c.057 1.233.261 2.102.535 2.853.274.74.666 1.373 1.288 1.996.622.622 1.256 1.014 1.996 1.288.75.274 1.62.478 2.853.535 1.233.057 1.613.069 4.743.069s3.51-.012 4.743-.069c1.233-.057 2.102-.261 2.853-.535.74-.274 1.373-.666 1.996-1.288.622-.622 1.014-1.256 1.288-1.996.274-.75.478-1.62.535-2.853.057-1.233.069-1.613.069-4.743s-.012-3.51-.069-4.743c-.057-1.233-.261-2.102-.535-2.853-.274-.74-.666-1.373-1.288-1.996-.622-.622-1.256-1.014-1.996-1.288-.75-.274-1.62-.478-2.853-.535-1.233-.057-1.613-.069-4.743-.069zm-2.062 1.48c-3.078 0-3.41.012-4.63.067-1.18.055-1.782.253-2.164.398-.37.135-.688.318-.996.625-.308.308-.49.615-.625.996-.145.382-.343.984-.398 2.164-.055 1.22-.067 1.552-.067 4.63s.012 3.41.067 4.63c.055 1.18.253 1.782.398 2.164.135.37.318.688.625.996.308.308.615.49.996.625.382.145.984.343 2.164.398 1.22.055 1.552.067 4.63.067s3.41-.012 4.63-.067c1.18-.055 1.782-.253 2.164-.398.37-.135.688-.318.996-.625.308-.308.49-.615.625-.996.145-.382.343-.984.398-2.164.055-1.22.067-1.552.067-4.63s-.012-3.41-.067-4.63c-.055-1.18-.253-1.782-.398-2.164-.135-.37-.318-.688-.625-.996-.308-.308-.615-.49-.996-.625-.382-.145-.984-.343-2.164-.398-1.22-.055-1.552-.067-4.63-.067zm0 3.65c-2.613 0-4.733 2.12-4.733 4.733s2.12 4.733 4.733 4.733 4.733-2.12 4.733-4.733-2.12-4.733-4.733-4.733zm0 7.783c-1.687 0-3.05-1.363-3.05-3.05s1.363-3.05 3.05-3.05 3.05 1.363 3.05 3.05-1.363 3.05-3.05 3.05zm5.138-7.747c0-.441.358-.8.8-.8s.8.358.8.8-.358.8-.8.8-.8-.358-.8-.8z" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.193 4.292c-.829.367-1.716.613-2.652.723.954-.572 1.689-1.479 2.038-2.569-.896.531-1.895.918-2.955 1.123-.847-.905-2.057-1.47-3.39-1.47-2.568 0-4.654 2.086-4.654 4.654 0 .364.041.717.119 1.054-3.87-1.94-7.3-5.145-9.6-9.155-.4.686-.626 1.488-.626 2.348 0 1.615.823 3.037 2.078 3.868-.76-.024-1.472-.234-2.09-.576v.059c0 2.254 1.6 4.132 3.719 4.568-.392.107-.803.165-1.229.165-.3 0-.59-.029-.87-.083.59 1.838 2.3 3.172 4.316 3.21-1.597 1.252-3.606 2.002-5.787 2.002-.377 0-.749-.022-1.112-.065 2.062 1.323 4.512 2.098 7.158 2.098 8.58 0 13.267-7.106 13.267-13.267 0-.202-.005-.4-.014-.599.916-.662 1.705-1.483 2.333-2.423z" /></svg>
+                </a>
+            </div>
+        </div>
+    -->
+    </footer>
+
+</body>
+</html>
