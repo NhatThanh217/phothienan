@@ -109,5 +109,14 @@
             width: 100%;
             object-fit: cover;
         }
+            /* Add this CSS to your stylesheet or in a <style> tag in your <head> */
+    /* This utility class hides the scrollbar */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
         
   

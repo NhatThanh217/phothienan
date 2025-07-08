@@ -781,15 +781,31 @@
     <section id="gallery" class="py-20 bg-fdfaf6">
         <div class="container mx-auto px-4">
             <h2 class="text-5xl font-bold text-center section-title mb-12">Our Culinary Gallery</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                <img src="assets/summerroll.webp" alt="Vietnamese Fresh Rolls" class="img-fluid card p-0 h-full w-full">
-                <img src="assets/banhmi.webp" alt="Vietnamese Banh Mi" class="img-fluid card p-0 h-full w-full">
-                <img src="assets/phobowl.webp" alt="Vietnamese Noodle Soup" class="img-fluid card p-0 h-full w-full">
-                <img src="assets/curry.webp" alt="Thai Curry Dish" class="img-fluid card p-0 h-full w-full">
-                <img src="assets/51.webp" alt="Chinese Fried Rice" class="img-fluid card p-0 h-full w-full">
-                <img src="assets/45.webp" alt="Stir Fry Dish" class="img-fluid card p-0 h-full w-full">
-                <img src="assets/63.webp" alt="Dumplings" class="img-fluid card p-0 h-full w-full">
-                <img src="assets/springroll.webp" alt="Spring Rolls" class="img-fluid card p-0 h-full w-full">
+    
+            <div class="relative">
+    
+                <div id="slider-container" class="grid grid-flow-col auto-cols-[90%] sm:auto-cols-[48%] md:auto-cols-[32%] lg:auto-cols-[24%] gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar px-2">
+                    <img src="assets/summerroll.webp" alt="Vietnamese Fresh Rolls" class="img-fluid card p-0 h-full w-full snap-start">
+                    <img src="assets/banhmi.webp" alt="Vietnamese Banh Mi" class="img-fluid card p-0 h-full w-full snap-start">
+                    <img src="assets/phobowl.webp" alt="Vietnamese Noodle Soup" class="img-fluid card p-0 h-full w-full snap-start">
+                    <img src="assets/curry.webp" alt="Thai Curry Dish" class="img-fluid card p-0 h-full w-full snap-start">
+                    <img src="assets/51.webp" alt="Chinese Fried Rice" class="img-fluid card p-0 h-full w-full snap-start">
+                    <img src="assets/45.webp" alt="Stir Fry Dish" class="img-fluid card p-0 h-full w-full snap-start">
+                    <img src="assets/63.webp" alt="Dumplings" class="img-fluid card p-0 h-full w-full snap-start">
+                    <img src="assets/springroll.webp" alt="Spring Rolls" class="img-fluid card p-0 h-full w-full snap-start">
+                </div>
+    
+                <button id="prev-button" aria-label="Previous" class="absolute top-1/2 left-0 md:-left-4 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 text-gray-800 shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+    
+                <button id="next-button" aria-label="Next" class="absolute top-1/2 right-0 md:-right-4 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 text-gray-800 shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
